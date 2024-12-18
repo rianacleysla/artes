@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+    <title>ARTISTAS</title>
+    <link rel="stylesheet" href="riana.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<body>
+    <center>
+    <div id="app">
+        <nav>
+            <ul>
+                <li><a href="arte_contemporanea.html">INÍCIO</a></li>
+                <li><a href="arte_contemporanea2.html">ARTISTAS</a></li>
+                <li><a href="arte_contemporanea3.html">OBRAS</a></li>
+            </ul>
+        </nav>
+        <header>
+            <hr>
+            <h1>- Principais Artistas Contemporâneos -</h1>
+            <hr>
+        </header>
+        <main>
+        <br><br>
+        <div class="image-container">
+            <img src="riana_IMG5.jpg" alt="Andy Warhol">
+            <span class="image-name">Andy Warhol</span>
+        </div>
+        <div id="app">
+            <table>
+                <tr>
+                    <td>Origem</td>
+                    <td>Estados Unidos</td>
+                </tr>
+                <tr>
+                    <td>Estilo</td>
+                    <td>Pop Art</td>
+                </tr>
+                <tr>
+                    <td>Obras Icônicas</td>
+                    <td>"Campbell's Soup Cans," "Marilyn Diptych"</td>
+                </tr>
+                <tr>
+                    <td>Destaque</td>
+                    <td>Warhol revolucionou a arte ao transformar objetos cotidianos em ícones artísticos e ao utilizar técnicas de produção em massa. Sua obra questiona o consumismo e a relação entre a arte e a cultura de massa.</td>
+                </tr>
+            </table>
+            <br><br>
+            <div class="image-container">
+                <img src="riana_IMG6.jpg" alt="Bill Viola">
+                <span class="image-name">Bill Viola</span>
+            </div>
+            <table>
+                <tr>
+                    <td>Origem</td>
+                    <td>Estados Unidos</td>
+                </tr>
+                <tr>
+                    <td>Estilo</td>
+                    <td>Arte multimídia, vídeo</td>
+                </tr>
+                <tr>
+                    <td>Obras Icônicas</td>
+                    <td>"The Crossing," "Stations of the Cross"</td>
+                </tr>
+                <tr>
+                    <td>Destaque</td>
+                    <td>Viola é um dos pioneiros da arte em vídeo, utilizando a tecnologia para explorar temas como a vida, a morte e a espiritualidade. Seus vídeos imersivos muitas vezes têm um forte componente emocional.</td>
+                </tr>
+            </table>
+            <br><br>
+            <div class="image-container">
+                <img src="riana_IMG7.jpeg" alt="Marina Abramović">
+                <span class="image-name">Marina Abramović</span>
+            </div>
+            <table>
+                <tr>
+                    <td>Origem</td>
+                    <td>Sérvia</td>
+                </tr>
+                <tr>
+                    <td>Estilo</td>
+                    <td>Performance Art</td>
+                </tr>
+                <tr>
+                    <td>Obras Icônicas</td>
+                    <td>"The Artist is Present," "Rhythm 0"</td>
+                </tr>
+                <tr>
+                    <td>Destaque</td>
+                    <td>Abramović é uma das principais figuras da arte performática. Sua obra explora o limite físico e emocional do corpo humano e a relação com o público, criando experiências imersivas e muitas vezes intensas.</td>
+                </tr>
+            </table>
+            <br><br>
+            <div class="image-container">
+                <img src="riana_IMG8.jpg" alt="Gerhard Richter">
+                <span class="image-name">Gerhard Richter</span>
+            </div>
+            <table>
+                <tr>
+                    <td>Origem</td>
+                    <td>Alemanha</td>
+                </tr>
+                <tr>
+                    <td>Estilo</td>
+                    <td>Pintura abstrata e figurativa</td>
+                </tr>
+                <tr>
+                    <td>Obras Icônicas</td>
+                    <td>"Betty," "Candle"</td>
+                </tr>
+                <tr>
+                    <td>Destaque</td>
+                    <td>Richter é conhecido por sua versatilidade, alternando entre a pintura abstrata e figurativa. Seu trabalho aborda a relação entre a memória, o tempo e a verdade histórica, frequentemente com uma abordagem emocionalmente ambígua.</td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    artistas: [
+                        {
+                            nome: 'Andy Warhol',
+                            origem: 'Estados Unidos',
+                            estilo: 'Pop Art',
+                            obras: '"Campbell\'s Soup Cans," "Marilyn Diptych"',
+                            destaque: 'Warhol revolucionou a arte ao transformar objetos cotidianos em ícones artísticos e ao utilizar técnicas de produção em massa. Sua obra questiona o consumismo e a relação entre a arte e a cultura de massa.'
+                        },
+                        {
+                            nome: 'Banksy',
+                            origem: 'Reino Unido',
+                            estilo: 'Arte de rua, graffiti',
+                            obras: '"Girl with Balloon," "There Is Always Hope"',
+                            destaque: 'Banksy é famoso por seu anonimato e suas obras com críticas políticas e sociais, muitas vezes em espaços urbanos. Sua arte provoca reflexão sobre a desigualdade social e os sistemas de poder.'
+                        },
+                        {
+                            nome: 'Marina Abramović',
+                            origem: 'Sérvia',
+                            estilo: 'Performance Art',
+                            obras: '"The Artist is Present," "Rhythm 0"',
+                            destaque: 'Abramović é uma das principais figuras da arte performática. Sua obra explora o limite físico e emocional do corpo humano e a relação com o público, criando experiências imersivas e muitas vezes intensas.'
+                        },
+                        {
+                            nome: 'Gerhard Richter',
+                            origem: 'Alemanha',
+                            estilo: 'Pintura abstrata e figurativa',
+                            obras: '"Betty," "Candle"',
+                            destaque: 'Richter é conhecido por sua versatilidade, alternando entre a pintura abstrata e figurativa. Seu trabalho aborda a relação entre a memória, o tempo e a verdade histórica, frequentemente com uma abordagem emocionalmente ambígua.'
+                        }
+                    ]
+                }
+            });
+        </script>
+    </main>
+</center>
+</body>
+</html>

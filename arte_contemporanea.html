@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <title>ARTE - CONTEMPORÂNEA</title>
+    <link rel="stylesheet" href="riana.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<body>
+    <center>
+    <img width="1550" height="1000" src="riana_IMG1.jpg" alt="IMG1.jpg">
+    <div id="app">
+        <nav>
+            <ul>
+                <li><a href="arte_contemporanea.html">INÍCIO</a></li>
+                <li><a href="arte_contemporanea2.html">ARTISTAS</a></li>
+                <li><a href="arte_contemporanea3.html">OBRAS</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>O Que é Arte Contemporânea?</h1>
+            <h3>A arte contemporânea refere-se às produções artísticas criadas a partir da segunda metade do século XX até os dias atuais.  <br>Ela engloba diversas formas de expressão, como pintura, escultura, instalação, performance, vídeo e arte digital.<br>  Diferente de períodos anteriores, a arte contemporânea é caracterizada pela sua diversidade, liberdade criativa e <br>conexão direta com questões sociais, políticas e culturais.</h3>
+        </header>
+        <main>
+        <br><br>
+          <h2>- Características da Arte Contemporânea -</h2>
+        <br>
+          <table>
+          <tr v-for="caracteristica in caracteristicas" :key="caracteristica.id">
+          <td>{{ caracteristica.tema }}</td>
+          <td>{{ caracteristica.descricao }}</td>
+        </tr>
+          </table>
+        </main>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                caracteristicas: [
+                    {
+                        id: 1,
+                        tema: 'Experimentação',
+                        descricao: 'Os artistas utilizam diferentes materiais e técnicas, explorando novos conceitos.'
+                    },
+                    {
+                        id: 2,
+                        tema: 'Interdisciplinaridade',
+                        descricao: 'Combinação de diferentes áreas, como música, literatura e tecnologia.'
+                    },
+                    {
+                        id: 3,
+                        tema: 'Interação com o Público',
+                        descricao: 'Muitas obras dependem da interação do espectador para serem completas.'
+                    },
+                    {
+                        id: 4,
+                        tema: 'Crítica Social',
+                        descricao: 'A arte contemporânea frequentemente aborda temas como desigualdade, meio ambiente e identidade.'
+                    }
+                ]
+            }
+        });
+    </script> 
+    <br><br> 
+    <h2>- Movimentos e Tendências da Arte Contemporânea -</h2>
+    <br>
+    <div class="image-container">
+        <img src="riana_IMG2.jpg" alt="Arte Conceitual">
+        <span class="image-name">Arte Conceitual</span>
+    </div>
+    <div class="image-container">
+        <img src="riana_IMG3.jpg" alt="Arte Pop">
+        <span class="image-name">Arte Pop</span>
+    </div>
+    <div class="image-container">
+        <img src="riana_IMG4.jpg" alt="Performance Art">
+        <span class="image-name">Performance Art</span>
+    </div>
+    <br><br><br><br><br><br>
+    <h4>Rianacleysla - 2024</h4>
+    </center>
+</body>
+</html>
